@@ -3,89 +3,79 @@
 El projecte QuizBot per GEI-LP (edició tardor 2019). 
 L’objectiu general de la pràctica consisteix en desenvolupar un chatbot que permeti recollir les dades d’enquestes definides mitjançant un compilador a través de telegram i consultar gràfiques simples i informes sobre les dades recollides.
 
-## Getting Started
+## Començem
 
 Aquestes instrucciones t'ajudaran a executar el projecte en la teva màquina local i testejar-lo.
 
-### Prerequisites
+### Prerequisits
 
-Se necesitan tener instaladas las siguientes librerias de Python 
+Per realitzar la nostra pròpia gramàtica necessitem tenir instal·lat ANTLR4
+
+A ms,es necessiten tenir instalades les següents llibreries de Python:
 
 ```
-### matplotlib -> per graficar dades.
-### networkx -> per a manipular grafs.
+matplotlib -> per graficar dades.
+networkx -> per a manipular grafs.
 pickle -> per guardar i carregar estructures de dades en binari.
 python-telegram-bot -> per interactuar amb Telegram.
 ```
 
-### Installing
+### Instal·lant...
 
-A step by step series of examples that tell you how to get a development env running
+Per realitzar la instal·lació de ANTLR4:
 
-Say what the step will be
+Primer cal descarregar el arxiu jar [ANTLR4](https://www.antlr.org//):
+* [jar file](https://www.antlr.org/download/antlr-4.7.1-complete.jar)
+* [Getting started](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md)
 
-```
-Give the example
-```
-
-And repeat
+Per realitzar la instal·lació de les llibreries:
 
 ```
-until finished
+pip3 install antlr4-python3-runtime
+pip3 install matplotlib
+pip3 install networkx
+pip3 install python-telegram-bot
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Per executar el bot de Telegram, utilitzarem la següent comanda:
 
 ```
-Give an example
+python3 bot.py input.txt
 ```
+`input.txt` es el conjunt de respostes i preguntes que defineixen l'enquesta. Per utilitzar una altra enquesta, crear un nou arxiu i passar-lo com argument, o editar l'arxiu `input.txt`
 
-### And coding style tests
+### Bot de Telegram
 
-Explain what these tests test and why
+Una vegada executat el programa, cal anar al bot en Telegram i iniciar una conversa amb el Bot.
 
-```
-Give an example
-```
+### Comandes del bot
 
-## Deployment
+- `/start` inicia la conversa amb el Bot.
+- `/help` el Bot ha de contestar amb una llista de totes les possibles comandes i
+una breu documentació sobre el seu propòsit i ús.
+- `/author` el Bot ha d’escriure el nom complet de l’autor del projecte i seu correu
+electrònic oficial de la facultat.
+- `/quiz <idEnquesta>` el Bot ha de iniciar un intèrpret similar al de la secció anterior realitzant
+l’enquesta. A la secció següent s'amplia la informació.
+- `/bar <idPregunta>` el Bot ha de tornar una gràfica de barres mostrant un diagrama de barres
+de les respostes a la pregunta donada. A les seccions següents s'amplia la informació.
+- `/pie <idPregunta>` el Bot ha de tornar una gràfica de formatget amb el percentatge de les respostes a la pregunta
+donada. A les seccions següents s'amplia la informació.
+- `/report` el Bot ha de tornar quelcom tipus taula amb el nombre de respostes obtingudes per cada valor de cada pregunta. A les seccions següents s'amplia la informació.
 
-Add additional notes about how to deploy this on a live system
+## Referències
 
-## Built With
+* [Matplotlib](https://matplotlib.org/) - Per gràficar les dades
+* [NetworkX](https://maven.apache.org/) - Per manipular grafs
+* [Pickle](https://rometools.github.io/rome/) - Per guardar i carregar estructures de dades en binari.
+* [Python-telegram-bot](https://python-telegram-bot.org/) - Per interactuar amb Telegram.
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+## Autor
 
-## Contributing
+* **David Carballo** - *david.carballo@est.fib.upc.edu*
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Enunciat
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Aquest projecte s'ha realitzat segons les tasques demanades en l'enunciat de la [pràctica](https://gebakx.github.io/QuizBot/) 
