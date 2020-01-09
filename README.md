@@ -1,17 +1,21 @@
-# Project Title
+# LPQuizBot
 
-One Paragraph of project description goes here
+El projecte QuizBot per GEI-LP (edició tardor 2019). 
+L’objectiu general de la pràctica consisteix en desenvolupar un chatbot que permeti recollir les dades d’enquestes definides mitjançant un compilador a través de telegram i consultar gràfiques simples i informes sobre les dades recollides.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Aquestes instrucciones t'ajudaran a executar el projecte en la teva màquina local i testejar-lo.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Se necesitan tener instaladas las siguientes librerias de Python 
 
 ```
-Give examples
+### matplotlib -> per graficar dades.
+### networkx -> per a manipular grafs.
+pickle -> per guardar i carregar estructures de dades en binari.
+python-telegram-bot -> per interactuar amb Telegram.
 ```
 
 ### Installing
