@@ -11,7 +11,7 @@ Aquestes instrucciones t'ajudaran a executar el projecte en la teva màquina loc
 
 Per realitzar la nostra pròpia gramàtica necessitem tenir instal·lat ANTLR4
 
-A ms,es necessiten tenir instalades les següents llibreries de Python:
+A més, es necessiten tenir instalades les següents llibreries de Python:
 
 ```
 matplotlib -> per graficar dades.
@@ -22,9 +22,8 @@ python-telegram-bot -> per interactuar amb Telegram.
 
 ### Instal·lant...
 
-Per realitzar la instal·lació de ANTLR4:
+Per realitzar la instal·lació de [ANTLR4](https://www.antlr.org//):
 
-Primer cal descarregar el arxiu jar [ANTLR4](https://www.antlr.org//):
 * [jar file](https://www.antlr.org/download/antlr-4.7.1-complete.jar)
 * [Getting started](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md)
 
@@ -37,18 +36,18 @@ pip3 install networkx
 pip3 install python-telegram-bot
 ```
 
-## Running the tests
+## Execució
 
 Per executar el bot de Telegram, utilitzarem la següent comanda:
 
 ```
 python3 bot.py input.txt
 ```
-`input.txt` es el conjunt de respostes i preguntes que defineixen l'enquesta. Per utilitzar una altra enquesta, crear un nou arxiu i passar-lo com argument, o editar l'arxiu `input.txt`
+`input.txt` es el conjunt de respostes i preguntes que defineixen l'enquesta. Per utilitzar una altra enquesta, crear un nou arxiu i passar-lo com argument, o editar l'arxiu `input.txt`.
 
 ### Bot de Telegram
 
-Una vegada executat el programa, cal anar al bot en Telegram i iniciar una conversa amb el Bot.
+Una vegada executat el programa, cal anar a Telegram i iniciar una conversa amb el Bot.
 
 ### Comandes del bot
 
@@ -78,4 +77,4 @@ donada. A les seccions següents s'amplia la informació.
 
 ## Enunciat
 
-Aquest projecte s'ha realitzat segons les tasques demanades en l'enunciat de la [pràctica](https://gebakx.github.io/QuizBot/) 
+Aquest projecte s'ha realitzat segons les tasques demanades en l'enunciat de la [pràctica](https://gebakx.github.io/QuizBot/). 
